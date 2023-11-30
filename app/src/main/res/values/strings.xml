@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">GroceryStore</string>
+    //Buttons
+    <string name="btnLogin">Iniciar sesión</string>
+    <string name="btnRegistro">Registrarse</string>
+    <string name="btnContinue">Continuar</string>
+    <string name="btnSend">Enviar correo</string>
+    <string name="btnReturn">Volver al inicio</string>
+    <string name="btnLogout">Cerrar sesión</string>
+    //Labels
+    <string name="tvEmailLabel">Correo electrónico:</string>
+    <string name="tvPasswordLabel">Contraseña:</string>
+    <string name="tvNameLabel">Nombre(s):</string>
+    <string name="tvLastNameLabel">Apellido(s):</string>
+    <string name="tvDocumentNumberLabel">Número de documento:</string>
+    <string name="tvDocumentTypeLabel">Tipo de documento:</string>
+    <string name="tvPhoneLabel">Número de télefono:</string>
+    <string name="tvAddress">Dirección:</string>
+    //Hints
+    <string name="etHintEmail">Digite su correo electrónico</string>
+    <string name="etHintPassword">Digite su contraseña</string>
+    <string name="etHintName">Digite su nombre</string>
+    <string name="etHintLastname">Digite su apellido</string>
+    <string name="etHintConfirmpass">Confirmar contraseña</string>
+    <string name="etHintDocumentNumber">Digite su número de documento</string>
+    <string name="etHintPhone">Digite su número de télefono</string>
+    <string name="etHintAddress">Digite su dirección</string>
+    //Arrays
+    <string-array name="spDocumentType">
+        <item>Cédula de ciudadanía</item>
+        <item>Cédula de extranjería</item>
+    </string-array>
+    //Text views
+    <string name="tvForgotPassword"><u>¿Olvidaste tu contraseña?</u></string>
+    <string name="tvLoginRegister">¿Aun no tienes cuenta? <u>Registrate</u>.</string>
+    <string name="tvRegisterLogin">¿Ya tienes una cuenta? <u>Inicia sesión</u>.</string>
+    <string name="tvForgot">¡Ups!, parece ser que olvidaste tu contraseña, por favor ingresa tu correo elctrónico y enviaremos un email indicandote las instrucciones a seguir</string>
+</resources>
