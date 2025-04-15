@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class ResponseCredentials {
     private ArrayList<Credentials> credentials;
-    private String mensaje;
+    private String message;
 
     public ResponseCredentials(){ }
 
@@ -16,11 +16,11 @@ public class ResponseCredentials {
         this.credentials = credentials;
     }
 
-    public String getMensaje() {
-        return mensaje;
+    public String getMessage() {
+        return message;
     }
 
-    public void setMensaje(String mensaje) {
-        this.mensaje = mensaje;
+    public void setMensaje(String message) {
+        this.message = message;
     }
 }

@@ -15,12 +15,10 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import java.io.Serializable;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import co.edu.grocerystore.api.ServiceUsers;
-import co.edu.grocerystore.entities.Person;
 import co.edu.grocerystore.model.Register;
 import co.edu.grocerystore.model.ResponseCredentials;
 import co.edu.grocerystore.remote.ClientRetroFit;
@@ -103,8 +101,7 @@ public class register extends AppCompatActivity {
                 public void onResponse(Call<ResponseCredentials> call, Response<ResponseCredentials> response) {
                     if(response.isSuccessful()){
                         ResponseCredentials body = response.body();
-                        String mensaje = body.getMensaje();
-                        Toast.makeText(register.this, "Registrado: " + mensaje, Toast.LENGTH_SHORT).show();
+                        String mensaje = body.getMessage();
                         if(mensaje.equals("ok")){
                             goLogin();
                         } else {
@@ -129,17 +126,6 @@ public class register extends AppCompatActivity {
             Intent goLogin = new Intent(getApplicationContext(), login.class);
             startActivity(goLogin);
         }catch(Exception e){
-
-        }
-    }
-
-    private void goRegister(View view){
-        try{
-            Intent goHome = new Intent(getApplicationContext(), home.class);
-            Person person = new Person(name, lastname, doctype, docnumber, address, email, phone, password);
-            goHome.putExtra("person", person);
-            startActivity(goHome);
-        } catch (Exception e){
 
         }
     }

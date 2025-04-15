@@ -35,4 +35,58 @@
     <string name="tvLoginRegister">¿Aun no tienes cuenta? <u>Registrate</u>.</string>
     <string name="tvRegisterLogin">¿Ya tienes una cuenta? <u>Inicia sesión</u>.</string>
     <string name="tvForgot">¡Ups!, parece ser que olvidaste tu contraseña, por favor ingresa tu correo elctrónico y enviaremos un email indicandote las instrucciones a seguir</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    //Bottom navigation
+    <string name="homeIcon">Catálogo</string>
+    <string name="profileIcon">Perfil</string>
+    <string name="carIcon">Carrito</string>
+    //Titles
+    <string name="catalog">Catálogo</string>
+    <string name="profile">Perfil</string>
+    <string name="shopcar">Carrito de compras</string>
+    //Categories
+    <string name="paper">Papel</string>
+    <string name="writing">Escritura</string>
+    <string name="scholar">Escolar</string>
+    <string name="office">Oficina</string>
+    <string name="archive">Archivo</string>
+    <string name="test"></string>
+    //Shopping car
+    <string name="tvProducts">Productos</string>
+    <string name="tvCar">Añadir al carrito</string>
+    <string name="increase">+</string>
+    <string name="decrease">-</string>
+    <string name="delete">Eliminar</string>
+    <string name="btnProceed">Proceder al pago</string>
+    //Profile
+    <string name="btnUserData">Ver mis datos</string>
+    <string name="btnLogOut">Cerrar sesión</string>
+    <string name="btnDeleteAccount">Eliminar cuenta</string>
+    <string name="tvUserData">Mis datos</string>
+    <string name="tvUserUpdate">Actualizar datos</string>
+    <string name="tvUserCancel">Cancelar</string>
+    <string name="tvUserSave">Guardar cambios</string>
+    //Transaction
+    <string name="tvTransactionSub">Revisa y confirma tu compra</string>
+    <string name="tvTransactionDetail">Detalle de la entrega</string>
+    <string name="tvPayDetail">Detalle del pago</string>
+    <string name="tvPayLabel">Selecciona tu método de pago:</string>
+    <string name="tvNumberLabel">Número de cuenta</string>
+    <string name="tvTransactionTotal">Total</string>
+    <string name="btnTransactionConfirm">Confirmar compra</string>
+    <string name="etHintNum">Digite su número de cuenta</string>
+    <string-array name="spPayMethod">
+        <item>Nequi</item>
+        <item>PSE</item>
+        <item>DaviPlata</item>
+        <item>Visa</item>
+        <item>MasterCard</item>
+    </string-array>
+    //Confirm Transaction
+    <string name="tvDescription">Descripción</string>
+    <string name="tvQuant">Cantidad</string>
+    <string name="tvPrPrice">Precio Unitario</string>
+    <string name="trReturn">Regresar</string>
+    <string name="trBill">Factura</string>
 </resources>

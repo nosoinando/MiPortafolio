@@ -6,4 +6,9 @@
     </style>
 
     <style name="Theme.GroceryStore" parent="Base.Theme.GroceryStore" />
+    <style name="BottomNavigation">
+        <item name="android:background">@color/blue3</item>
+        <item name="itemIconTint">@color/white</item>
+        <item name="itemTextColor">@color/white</item>
+    </style>
 </resources>

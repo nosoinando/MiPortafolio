@@ -24,7 +24,6 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import co.edu.grocerystore.api.ServiceLogin;
-import co.edu.grocerystore.entities.Person;
 import co.edu.grocerystore.model.Credentials;
 import co.edu.grocerystore.model.Loger;
 import co.edu.grocerystore.model.ResponseCredentials;
@@ -50,7 +49,6 @@ public class login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         begin();
-        receiver();
         tvForgotPassword.setOnClickListener(this::forgotPassword);
         tvLoginRegister.setOnClickListener(this::register);
         btnLogin.setOnClickListener(this::processLogin);
@@ -72,12 +70,11 @@ public class login extends AppCompatActivity {
         startActivity(goRegister);
     }
 
-    private void processLogin(View view){
+    private void processLogin(View view) {
         data();
-        if(!validEmail(email) && password.isEmpty()){
+        if (!validEmail(email) && password.isEmpty()) {
             alertView("Error en los datos");
         } else {
-            String pass = md5(password);
             Loger loger = new Loger();
             loger.setUser_email(email);
             loger.setUser_password(password);
@@ -87,21 +84,22 @@ public class login extends AppCompatActivity {
             call.enqueue(new Callback<ResponseCredentials>() {
                 @Override
                 public void onResponse(Call<ResponseCredentials> call, Response<ResponseCredentials> response) {
-                    if(response.isSuccessful()){
+                    if (response.isSuccessful()) {
                         ResponseCredentials body = response.body();
-                        String mensaje = body.getMensaje();
+                        String mensaje = body.getMessage();
                         ArrayList<Credentials> list = body.getCredentials();
-                        Toast.makeText(login.this, "Ingresado:"+mensaje, Toast.LENGTH_SHORT).show();
-                        if(mensaje.equals(("OK")) && !isNullOrEmpty(list)){
-                            for(Credentials c:list){
+
+                        if (mensaje.equals(("OK")) && !isNullOrEmpty(list)) {
+                            Toast.makeText(login.this, "Ingresado exitosamente", Toast.LENGTH_SHORT).show();
+                            for (Credentials c : list) {
                                 SharedPreferences shared = getSharedPreferences("credenciales", Context.MODE_PRIVATE);
                                 SharedPreferences.Editor editor = shared.edit();
-                                editor.putString("key",c.getUser_key());
-                                editor.putString("identifier",c.getUser_identifier());
-                                editor.putString("id",c.getUser_id());
+                                editor.putString("key", c.getUser_key());
+                                editor.putString("identifier", c.getUser_identifier());
+                                editor.putString("id", c.getUser_id());
                                 editor.commit();
-                                store();
                             }
+                            store();
                         } else {
                             alertView("Usuario no existe o Contraseña Inválida!, Intentelo de nuevo");
                         }
@@ -112,7 +110,7 @@ public class login extends AppCompatActivity {
 
                 @Override
                 public void onFailure(Call<ResponseCredentials> call, Throwable t) {
-                    Log.i("Reponse2",t.getMessage());
+                    Log.i("Reponse2", t.getMessage());
                     alertView("Error en Servicio comuniquese con el Programador");
                 }
             });
@@ -131,7 +129,7 @@ public class login extends AppCompatActivity {
 
     private void alertView(String msj){
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("Login");
+        builder.setTitle("Iniciar sesión");
         builder.setMessage(msj);
         builder.setPositiveButton("Aceptar", null);
         builder.create();
@@ -183,25 +181,13 @@ public class login extends AppCompatActivity {
         return "";
     }
 
-    public void begin(){
+    public void begin() {
         this.etEmail = findViewById(R.id.etLoginEmail);
         this.etPassword = findViewById(R.id.etLoginPassword);
         this.tvForgotPassword = findViewById(R.id.tvForgotPassword);
         this.tvLoginRegister = findViewById(R.id.tvLoginRegister);
         this.btnLogin = findViewById(R.id.btnLogin);
         this.btnReturn = findViewById(R.id.btnReturnLogin);
-    }
-
-    public Person receiver(){
-        Bundle data = getIntent().getExtras();
-        if(data != null){
-            Person person = new Person();
-            person = (Person) data.get("person");
-            etEmail.setText(person.getEmail());
-            etPassword.setText(person.getPassword());
-            return person;
-        }
-        return null;
     }
 
     private void data(){
