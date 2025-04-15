@@ -1,0 +1,89 @@
+<div>
+    <div class="header">
+        <div class="d-flex justify-content-between">
+            <div class="d-flex">
+                <div class="title">
+                    MARVEL
+                </div>
+                <div class="subtitle">
+                    CHARACTERS INVENTORY
+                </div>
+            </div>
+            <div>
+                <a href="home" routerLink="/home"><button mat-fab color="primary"><mat-icon>arrow_back</mat-icon></button></a>
+            </div>
+        </div>
+    </div>
+    <div class="body">
+         <div class="row character-content" *ngIf="loadedPage">
+            <div class="col-5">
+                <img src="{{currentCharacter.thumbnail.path}}" alt="{{currentCharacter.name}}">
+            </div>
+            <div class="col">
+                <div class="heroe-title">{{currentCharacter.name}}</div>
+                <div class="description mb-4">{{currentCharacter.description ? currentCharacter.description : 'Not description yet.'}}</div>
+                <mat-expansion-panel class="main-panel mb-4" expanded="true">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title> 
+                            <span class="panel-title">Stories, events, series and comics</span>
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <ul>
+                        <li *ngIf="currentCharacter.stories_items.length != 0">
+                            <mat-expansion-panel class="info-panel">
+                                <mat-expansion-panel-header>
+                                    <mat-panel-title> 
+                                        <span class="panel-title">Stories</span>
+                                    </mat-panel-title>
+                                </mat-expansion-panel-header>
+                                <ul>
+                                    <li *ngFor="let story of currentCharacter.stories_items">{{story.name}}</li>
+                                </ul>
+                            </mat-expansion-panel>
+                        </li>
+                        <li *ngIf="currentCharacter.events_items.length != 0">
+                            <mat-expansion-panel class="info-panel">
+                                <mat-expansion-panel-header>
+                                    <mat-panel-title> 
+                                        <span class="panel-title">Events</span>
+                                    </mat-panel-title>
+                                </mat-expansion-panel-header>
+                                <ul>
+                                    <li *ngFor="let event of currentCharacter.events_items">{{event.name}}</li>
+                                </ul>
+                            </mat-expansion-panel>
+                        </li>
+                        <li *ngIf="currentCharacter.series_items.length != 0">
+                            <mat-expansion-panel class="info-panel">
+                                <mat-expansion-panel-header>
+                                    <mat-panel-title> 
+                                        <span class="panel-title">Series</span>
+                                    </mat-panel-title>
+                                </mat-expansion-panel-header>
+                                <ul>
+                                    <li *ngFor="let serie of currentCharacter.series_items">{{serie.name}}</li>
+                                </ul>
+                            </mat-expansion-panel>
+                        </li>
+                        <li *ngIf="currentCharacter.items.length != 0">
+                            <mat-expansion-panel class="info-panel">
+                                <mat-expansion-panel-header>
+                                    <mat-panel-title> 
+                                        <span class="panel-title">Comics</span>
+                                    </mat-panel-title>
+                                </mat-expansion-panel-header>
+                                <ul>
+                                    <li *ngFor="let comic of currentCharacter.items">{{comic.name}}</li>
+                                </ul>
+                            </mat-expansion-panel>
+                        </li>
+                    </ul>
+                </mat-expansion-panel>
+                <div>
+                    Last modified: {{currentCharacter.modified.split('T')[0]}}
+                </div>
+            </div>
+         </div>
+    </div>
+</div>
+

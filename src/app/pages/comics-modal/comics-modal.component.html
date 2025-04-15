@@ -1,0 +1,28 @@
+<div>
+    <div class="modal-content" mat-dialog-content *ngIf="loadedComic">
+        <div class="header row">
+            <div class="col">
+                <span class="title">{{comic.title}}</span>
+            </div>
+            <div class="col-3 btn-container">
+                <button id="btn-fav" (click)="isFavorite()" [ngClass]="{'fav' : data.isFavorite, 'nofav' : !data.isFavorite}" mat-icon-button><mat-icon>grade</mat-icon></button>
+                <button class="close-btn" (click)="closeModal()" mat-mini-fab><mat-icon>close</mat-icon></button>
+            </div>
+            
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="{{comic.images[0].path}}" alt="{{comic.title}}">
+            </div>
+            <div class="col">
+                <div>
+                    <span>{{comic.description ? comic.description : 'Not description yet.'}}</span>
+                </div>
+                <div *ngIf="data.isFavorite">
+                    <span>¡It is in your favorites!</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>

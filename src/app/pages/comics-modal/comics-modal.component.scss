@@ -1,0 +1,41 @@
+.modal-content{
+    padding: 3em;
+    background-color: black;
+    color: white;
+}
+
+.header{
+    margin-bottom: 2em;
+}
+
+.title{
+    font-weight: 500;
+    font-size: 2em;
+}
+
+.close-btn{
+    background-color: #B13D4C;
+    color: white;
+}
+
+img{
+    max-width: 21em;
+}
+
+.nofav{
+    color: grey;
+}
+
+#btn-fav:hover{
+    color: #FFCE46;
+}
+
+.fav{
+    color: #FFCE46;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: end;
+}
+

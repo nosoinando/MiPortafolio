@@ -1,0 +1,67 @@
+.header{
+    background-color: black;
+    color: white;
+    padding: 2em;
+    padding-bottom: 0;
+}
+
+.body{
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.9), 
+        rgba(0, 0, 0, 0.9)
+      ), url('../../../assets/backgrounds/DI0944_73ec5c7a-6d68-4613-a5da-4a32fd26279b.webp');
+    color: white;
+}
+
+.title{
+    background-color: #B13D4C;
+    border-radius: 0.2em;
+    padding: 1em;
+    width: max-content;
+    font-size: 2.5em;
+    font-weight: 900;
+    margin-bottom: 1em;
+}
+
+.subtitle{
+    padding: 1.2em;
+    padding-left: 0.5em;
+    font-size: 2em;
+    font-weight: 500;
+}
+
+.character-content{
+    max-width: 100%;
+    padding: 2em;
+}
+
+img{
+    max-width: 100%;
+}
+
+.panel-title{
+    color: white;
+}
+
+mat-expansion-panel{
+    width: 100%;
+}
+
+.main-panel{
+    background-color: black;
+}
+
+.heroe-title{
+    font-size: 1.8em;
+    font-weight: 600;
+    margin-bottom: 1em;
+}
+
+li{
+    color: white;
+    margin-bottom: 1em;
+}
+
+.info-panel{
+    background-color: #B13D4C;
+}
