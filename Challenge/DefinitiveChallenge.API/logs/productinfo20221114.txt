@@ -1,0 +1,300 @@
+2022-11-14 23:22:47.118 -05:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2022-11-14 23:22:47.205 -05:00 [DBG] Hosting starting
+2022-11-14 23:22:47.312 -05:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 9F2430127978D4F4485B66836772CC9021F6DD5C)
+2022-11-14 23:22:47.337 -05:00 [INF] Now listening on: https://localhost:7204
+2022-11-14 23:22:47.337 -05:00 [INF] Now listening on: http://localhost:5204
+2022-11-14 23:22:47.338 -05:00 [DBG] Loaded hosting startup assembly DefinitiveChallenge.API
+2022-11-14 23:22:47.338 -05:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2022-11-14 23:22:47.338 -05:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2022-11-14 23:22:47.339 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-14 23:22:47.340 -05:00 [INF] Hosting environment: Development
+2022-11-14 23:22:47.340 -05:00 [INF] Content root path: D:\Dev\DefinitiveChallenge\DefinitiveChallenge.API\
+2022-11-14 23:22:47.340 -05:00 [DBG] Hosting started
+2022-11-14 23:22:47.351 -05:00 [DBG] Connection id "0HMM6O46E57RM" received FIN.
+2022-11-14 23:22:47.351 -05:00 [DBG] Connection id "0HMM6O46E57RL" received FIN.
+2022-11-14 23:22:47.358 -05:00 [DBG] Connection id "0HMM6O46E57RM" accepted.
+2022-11-14 23:22:47.358 -05:00 [DBG] Connection id "0HMM6O46E57RL" accepted.
+2022-11-14 23:22:47.359 -05:00 [DBG] Connection id "0HMM6O46E57RM" started.
+2022-11-14 23:22:47.359 -05:00 [DBG] Connection id "0HMM6O46E57RL" started.
+2022-11-14 23:22:47.372 -05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-11-14 23:22:47.372 -05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-11-14 23:22:47.398 -05:00 [DBG] Connection id "0HMM6O46E57RL" stopped.
+2022-11-14 23:22:47.398 -05:00 [DBG] Connection id "0HMM6O46E57RM" stopped.
+2022-11-14 23:22:47.403 -05:00 [DBG] Connection id "0HMM6O46E57RL" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-11-14 23:22:47.403 -05:00 [DBG] Connection id "0HMM6O46E57RM" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-11-14 23:22:48.023 -05:00 [DBG] Connection id "0HMM6O46E57RN" accepted.
+2022-11-14 23:22:48.028 -05:00 [DBG] Connection id "0HMM6O46E57RN" started.
+2022-11-14 23:22:48.184 -05:00 [DBG] Connection 0HMM6O46E57RN established using the following protocol: "Tls13"
+2022-11-14 23:22:48.247 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7204/swagger/index.html - -
+2022-11-14 23:22:48.280 -05:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2022-11-14 23:22:48.386 -05:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2022-11-14 23:22:48.609 -05:00 [DBG] Response markup was updated to include browser refresh script injection.
+2022-11-14 23:22:48.614 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7204/swagger/index.html - - - 200 - text/html;charset=utf-8 370.4939ms
+2022-11-14 23:22:48.646 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7204/_vs/browserLink - -
+2022-11-14 23:22:48.646 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7204/_framework/aspnetcore-browser-refresh.js - -
+2022-11-14 23:22:48.655 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7204/_framework/aspnetcore-browser-refresh.js - - - 200 12016 application/javascript;+charset=utf-8 9.1893ms
+2022-11-14 23:22:48.705 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7204/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 59.1859ms
+2022-11-14 23:22:48.798 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7204/swagger/v1/swagger.json - -
+2022-11-14 23:22:48.990 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7204/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 192.2914ms
+2022-11-14 23:23:11.324 -05:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2022-11-14 23:23:11.439 -05:00 [DBG] Hosting starting
+2022-11-14 23:23:11.567 -05:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 9F2430127978D4F4485B66836772CC9021F6DD5C)
+2022-11-14 23:23:11.598 -05:00 [INF] Now listening on: https://localhost:7204
+2022-11-14 23:23:11.598 -05:00 [INF] Now listening on: http://localhost:5204
+2022-11-14 23:23:11.599 -05:00 [DBG] Loaded hosting startup assembly DefinitiveChallenge.API
+2022-11-14 23:23:11.599 -05:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2022-11-14 23:23:11.599 -05:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2022-11-14 23:23:11.600 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-14 23:23:11.601 -05:00 [INF] Hosting environment: Development
+2022-11-14 23:23:11.601 -05:00 [INF] Content root path: D:\Dev\DefinitiveChallenge\DefinitiveChallenge.API\
+2022-11-14 23:23:11.602 -05:00 [DBG] Hosting started
+2022-11-14 23:23:11.863 -05:00 [DBG] Connection id "0HMM6O4DNT1FH" accepted.
+2022-11-14 23:23:11.863 -05:00 [DBG] Connection id "0HMM6O4DNT1FI" accepted.
+2022-11-14 23:23:11.865 -05:00 [DBG] Connection id "0HMM6O4DNT1FH" started.
+2022-11-14 23:23:11.865 -05:00 [DBG] Connection id "0HMM6O4DNT1FI" started.
+2022-11-14 23:23:11.873 -05:00 [DBG] Connection id "0HMM6O4DNT1FI" received FIN.
+2022-11-14 23:23:11.873 -05:00 [DBG] Connection id "0HMM6O4DNT1FH" received FIN.
+2022-11-14 23:23:11.884 -05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-11-14 23:23:11.884 -05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-11-14 23:23:11.918 -05:00 [DBG] Connection id "0HMM6O4DNT1FI" stopped.
+2022-11-14 23:23:11.918 -05:00 [DBG] Connection id "0HMM6O4DNT1FH" stopped.
+2022-11-14 23:23:11.920 -05:00 [DBG] Connection id "0HMM6O4DNT1FI" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-11-14 23:23:11.920 -05:00 [DBG] Connection id "0HMM6O4DNT1FH" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-11-14 23:23:12.157 -05:00 [DBG] Connection id "0HMM6O4DNT1FJ" accepted.
+2022-11-14 23:23:12.159 -05:00 [DBG] Connection id "0HMM6O4DNT1FJ" started.
+2022-11-14 23:23:12.198 -05:00 [DBG] Connection 0HMM6O4DNT1FJ established using the following protocol: "Tls13"
+2022-11-14 23:23:12.264 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7204/swagger/index.html - -
+2022-11-14 23:23:12.303 -05:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2022-11-14 23:23:12.411 -05:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2022-11-14 23:23:12.525 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7204/_framework/aspnetcore-browser-refresh.js - -
+2022-11-14 23:23:12.530 -05:00 [DBG] Response markup was updated to include browser refresh script injection.
+2022-11-14 23:23:12.531 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7204/_framework/aspnetcore-browser-refresh.js - - - 200 12016 application/javascript;+charset=utf-8 5.8324ms
+2022-11-14 23:23:12.532 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7204/swagger/index.html - - - 200 - text/html;charset=utf-8 272.0866ms
+2022-11-14 23:23:12.547 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7204/_vs/browserLink - -
+2022-11-14 23:23:12.564 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7204/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 17.3884ms
+2022-11-14 23:23:12.711 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7204/swagger/v1/swagger.json - -
+2022-11-14 23:23:12.860 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7204/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 149.9652ms
+2022-11-14 23:23:20.732 -05:00 [DBG] Connection id "0HMM6O4DNT1FK" accepted.
+2022-11-14 23:23:20.733 -05:00 [DBG] Connection id "0HMM6O4DNT1FK" started.
+2022-11-14 23:23:20.733 -05:00 [DBG] Connection id "0HMM6O4DNT1FL" accepted.
+2022-11-14 23:23:20.733 -05:00 [DBG] Connection id "0HMM6O4DNT1FK" received FIN.
+2022-11-14 23:23:20.734 -05:00 [DBG] Connection id "0HMM6O4DNT1FL" started.
+2022-11-14 23:23:20.739 -05:00 [DBG] Connection 0HMM6O4DNT1FL established using the following protocol: "Tls13"
+2022-11-14 23:23:20.739 -05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.<FillHandshakeBufferAsync>g__InternalFillHandshakeBufferAsync|189_0[TIOAdapter](TIOAdapter adap, ValueTask`1 task, Int32 minSize)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-11-14 23:23:20.742 -05:00 [DBG] Connection id "0HMM6O4DNT1FK" stopped.
+2022-11-14 23:23:20.742 -05:00 [DBG] Connection id "0HMM6O4DNT1FK" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-11-14 23:23:20.748 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7204/api/products/4 - -
+2022-11-14 23:23:20.749 -05:00 [DBG] The request path  does not match the path filter
+2022-11-14 23:23:20.767 -05:00 [DBG] 1 candidate(s) found for the request path '/api/products/4'
+2022-11-14 23:23:20.770 -05:00 [DBG] Endpoint 'DefinitiveChallenge.API.Controllers.ProductController.GetProduct (DefinitiveChallenge.API)' with route pattern 'api/products/{id}' is valid for the request path '/api/products/4'
+2022-11-14 23:23:20.771 -05:00 [DBG] Request matched endpoint 'DefinitiveChallenge.API.Controllers.ProductController.GetProduct (DefinitiveChallenge.API)'
+2022-11-14 23:23:20.774 -05:00 [INF] Executing endpoint 'DefinitiveChallenge.API.Controllers.ProductController.GetProduct (DefinitiveChallenge.API)'
+2022-11-14 23:23:20.791 -05:00 [INF] Route matched with {action = "GetProduct", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[DefinitiveChallenge.API.Models.ProductDto] GetProduct(Int32) on controller DefinitiveChallenge.API.Controllers.ProductController (DefinitiveChallenge.API).
+2022-11-14 23:23:20.792 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2022-11-14 23:23:20.793 -05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2022-11-14 23:23:20.794 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2022-11-14 23:23:20.794 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2022-11-14 23:23:20.795 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2022-11-14 23:23:20.796 -05:00 [DBG] Executing controller factory for controller DefinitiveChallenge.API.Controllers.ProductController (DefinitiveChallenge.API)
+2022-11-14 23:23:20.798 -05:00 [DBG] Executed controller factory for controller DefinitiveChallenge.API.Controllers.ProductController (DefinitiveChallenge.API)
+2022-11-14 23:23:20.806 -05:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' ...
+2022-11-14 23:23:20.808 -05:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' using the name 'id' in request data ...
+2022-11-14 23:23:20.809 -05:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2022-11-14 23:23:20.809 -05:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2022-11-14 23:23:20.810 -05:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.Int32' ...
+2022-11-14 23:23:20.811 -05:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.Int32'.
+2022-11-14 23:23:20.815 -05:00 [INF] El producto con el id 4 no se pudo encontrar.
+2022-11-14 23:23:20.817 -05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2022-11-14 23:23:20.820 -05:00 [DBG] No information found on request to perform content negotiation.
+2022-11-14 23:23:20.820 -05:00 [DBG] Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types '["application/problem+json","application/problem+xml","application/problem+json","application/problem+xml"]'.
+2022-11-14 23:23:20.822 -05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+2022-11-14 23:23:20.822 -05:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2022-11-14 23:23:20.944 -05:00 [INF] Executed action DefinitiveChallenge.API.Controllers.ProductController.GetProduct (DefinitiveChallenge.API) in 144.6635ms
+2022-11-14 23:23:20.946 -05:00 [INF] Executed endpoint 'DefinitiveChallenge.API.Controllers.ProductController.GetProduct (DefinitiveChallenge.API)'
+2022-11-14 23:23:20.948 -05:00 [DBG] Connection id "0HMM6O4DNT1FL" completed keep alive response.
+2022-11-14 23:23:20.949 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7204/api/products/4 - - - 404 161 application/problem+json;+charset=utf-8 201.2175ms
+2022-11-14 23:23:43.832 -05:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2022-11-14 23:23:43.927 -05:00 [DBG] Hosting starting
+2022-11-14 23:23:44.033 -05:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 9F2430127978D4F4485B66836772CC9021F6DD5C)
+2022-11-14 23:23:44.063 -05:00 [INF] Now listening on: https://localhost:7204
+2022-11-14 23:23:44.064 -05:00 [INF] Now listening on: http://localhost:5204
+2022-11-14 23:23:44.065 -05:00 [DBG] Loaded hosting startup assembly DefinitiveChallenge.API
+2022-11-14 23:23:44.065 -05:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2022-11-14 23:23:44.066 -05:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2022-11-14 23:23:44.067 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-14 23:23:44.067 -05:00 [INF] Hosting environment: Development
+2022-11-14 23:23:44.068 -05:00 [INF] Content root path: D:\Dev\DefinitiveChallenge\DefinitiveChallenge.API\
+2022-11-14 23:23:44.069 -05:00 [DBG] Hosting started
+2022-11-14 23:23:44.221 -05:00 [DBG] Connection id "0HMM6O4NCGJ4O" received FIN.
+2022-11-14 23:23:44.221 -05:00 [DBG] Connection id "0HMM6O4NCGJ4N" received FIN.
+2022-11-14 23:23:44.229 -05:00 [DBG] Connection id "0HMM6O4NCGJ4N" accepted.
+2022-11-14 23:23:44.229 -05:00 [DBG] Connection id "0HMM6O4NCGJ4O" accepted.
+2022-11-14 23:23:44.232 -05:00 [DBG] Connection id "0HMM6O4NCGJ4O" started.
+2022-11-14 23:23:44.232 -05:00 [DBG] Connection id "0HMM6O4NCGJ4N" started.
+2022-11-14 23:23:44.251 -05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-11-14 23:23:44.251 -05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-11-14 23:23:44.286 -05:00 [DBG] Connection id "0HMM6O4NCGJ4O" stopped.
+2022-11-14 23:23:44.286 -05:00 [DBG] Connection id "0HMM6O4NCGJ4N" stopped.
+2022-11-14 23:23:44.289 -05:00 [DBG] Connection id "0HMM6O4NCGJ4N" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-11-14 23:23:44.289 -05:00 [DBG] Connection id "0HMM6O4NCGJ4O" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-11-14 23:23:44.509 -05:00 [DBG] Connection id "0HMM6O4NCGJ4P" accepted.
+2022-11-14 23:23:44.510 -05:00 [DBG] Connection id "0HMM6O4NCGJ4P" started.
+2022-11-14 23:23:44.548 -05:00 [DBG] Connection 0HMM6O4NCGJ4P established using the following protocol: "Tls13"
+2022-11-14 23:23:44.611 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7204/swagger/index.html - -
+2022-11-14 23:23:44.645 -05:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2022-11-14 23:23:44.744 -05:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2022-11-14 23:23:44.858 -05:00 [DBG] Response markup was updated to include browser refresh script injection.
+2022-11-14 23:23:44.862 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7204/swagger/index.html - - - 200 - text/html;charset=utf-8 253.9755ms
+2022-11-14 23:23:44.884 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7204/_vs/browserLink - -
+2022-11-14 23:23:44.884 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7204/_framework/aspnetcore-browser-refresh.js - -
+2022-11-14 23:23:44.892 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7204/_framework/aspnetcore-browser-refresh.js - - - 200 12016 application/javascript;+charset=utf-8 7.7395ms
+2022-11-14 23:23:44.909 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7204/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 24.9893ms
+2022-11-14 23:23:44.989 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7204/swagger/v1/swagger.json - -
+2022-11-14 23:23:45.150 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7204/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 160.5597ms
+2022-11-14 23:23:47.597 -05:00 [DBG] Connection id "0HMM6O4NCGJ4Q" accepted.
+2022-11-14 23:23:47.597 -05:00 [DBG] Connection id "0HMM6O4NCGJ4Q" received FIN.
+2022-11-14 23:23:47.597 -05:00 [DBG] Connection id "0HMM6O4NCGJ4Q" started.
+2022-11-14 23:23:47.598 -05:00 [DBG] Connection id "0HMM6O4NCGJ4R" accepted.
+2022-11-14 23:23:47.599 -05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-11-14 23:23:47.599 -05:00 [DBG] Connection id "0HMM6O4NCGJ4R" started.
+2022-11-14 23:23:47.600 -05:00 [DBG] Connection id "0HMM6O4NCGJ4Q" stopped.
+2022-11-14 23:23:47.601 -05:00 [DBG] Connection id "0HMM6O4NCGJ4Q" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-11-14 23:23:47.607 -05:00 [DBG] Connection 0HMM6O4NCGJ4R established using the following protocol: "Tls13"
+2022-11-14 23:23:47.616 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7204/api/products/4 - -
+2022-11-14 23:23:47.617 -05:00 [DBG] The request path  does not match the path filter
+2022-11-14 23:23:47.637 -05:00 [DBG] 1 candidate(s) found for the request path '/api/products/4'
+2022-11-14 23:23:47.641 -05:00 [DBG] Endpoint 'DefinitiveChallenge.API.Controllers.ProductController.GetProduct (DefinitiveChallenge.API)' with route pattern 'api/products/{id}' is valid for the request path '/api/products/4'
+2022-11-14 23:23:47.643 -05:00 [DBG] Request matched endpoint 'DefinitiveChallenge.API.Controllers.ProductController.GetProduct (DefinitiveChallenge.API)'
+2022-11-14 23:23:47.645 -05:00 [INF] Executing endpoint 'DefinitiveChallenge.API.Controllers.ProductController.GetProduct (DefinitiveChallenge.API)'
+2022-11-14 23:23:47.663 -05:00 [INF] Route matched with {action = "GetProduct", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[DefinitiveChallenge.API.Models.ProductDto] GetProduct(Int32) on controller DefinitiveChallenge.API.Controllers.ProductController (DefinitiveChallenge.API).
+2022-11-14 23:23:47.664 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2022-11-14 23:23:47.665 -05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2022-11-14 23:23:47.666 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2022-11-14 23:23:47.667 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2022-11-14 23:23:47.668 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2022-11-14 23:23:47.670 -05:00 [DBG] Executing controller factory for controller DefinitiveChallenge.API.Controllers.ProductController (DefinitiveChallenge.API)
+2022-11-14 23:23:47.672 -05:00 [DBG] Executed controller factory for controller DefinitiveChallenge.API.Controllers.ProductController (DefinitiveChallenge.API)
+2022-11-14 23:23:47.680 -05:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' ...
+2022-11-14 23:23:47.682 -05:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' using the name 'id' in request data ...
+2022-11-14 23:23:47.683 -05:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2022-11-14 23:23:47.684 -05:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2022-11-14 23:23:47.685 -05:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.Int32' ...
+2022-11-14 23:23:47.687 -05:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.Int32'.
+2022-11-14 23:23:47.723 -05:00 [FTL] Aparecio una excepción mientras se obtenía el id 4 del producto.
+2022-11-14 23:23:47.725 -05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2022-11-14 23:23:47.727 -05:00 [DBG] No information found on request to perform content negotiation.
+2022-11-14 23:23:47.728 -05:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2022-11-14 23:23:47.728 -05:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2022-11-14 23:23:47.729 -05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response.
+2022-11-14 23:23:47.729 -05:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2022-11-14 23:23:47.736 -05:00 [INF] Executed action DefinitiveChallenge.API.Controllers.ProductController.GetProduct (DefinitiveChallenge.API) in 61.2688ms
+2022-11-14 23:23:47.737 -05:00 [INF] Executed endpoint 'DefinitiveChallenge.API.Controllers.ProductController.GetProduct (DefinitiveChallenge.API)'
+2022-11-14 23:23:47.738 -05:00 [DBG] Connection id "0HMM6O4NCGJ4R" completed keep alive response.
+2022-11-14 23:23:47.739 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7204/api/products/4 - - - 500 - text/plain;+charset=utf-8 123.0950ms
+2022-11-14 23:58:49.262 -05:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2022-11-14 23:58:49.343 -05:00 [DBG] Hosting starting
+2022-11-14 23:58:49.451 -05:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 9F2430127978D4F4485B66836772CC9021F6DD5C)
+2022-11-14 23:58:49.480 -05:00 [INF] Now listening on: https://localhost:7204
+2022-11-14 23:58:49.481 -05:00 [INF] Now listening on: http://localhost:5204
+2022-11-14 23:58:49.481 -05:00 [DBG] Loaded hosting startup assembly DefinitiveChallenge.API
+2022-11-14 23:58:49.482 -05:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2022-11-14 23:58:49.482 -05:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2022-11-14 23:58:49.483 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-14 23:58:49.483 -05:00 [INF] Hosting environment: Development
+2022-11-14 23:58:49.484 -05:00 [INF] Content root path: D:\Dev\DefinitiveChallenge\DefinitiveChallenge.API\
+2022-11-14 23:58:49.484 -05:00 [DBG] Hosting started
+2022-11-14 23:58:49.714 -05:00 [DBG] Connection id "0HMM6OOAS20B6" received FIN.
+2022-11-14 23:58:49.721 -05:00 [DBG] Connection id "0HMM6OOAS20B6" accepted.
+2022-11-14 23:58:49.723 -05:00 [DBG] Connection id "0HMM6OOAS20B6" started.
+2022-11-14 23:58:49.735 -05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-11-14 23:58:49.766 -05:00 [DBG] Connection id "0HMM6OOAS20B6" stopped.
+2022-11-14 23:58:49.769 -05:00 [DBG] Connection id "0HMM6OOAS20B6" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-11-14 23:58:50.151 -05:00 [DBG] Connection id "0HMM6OOAS20B7" accepted.
+2022-11-14 23:58:50.152 -05:00 [DBG] Connection id "0HMM6OOAS20B7" started.
+2022-11-14 23:58:50.189 -05:00 [DBG] Connection 0HMM6OOAS20B7 established using the following protocol: "Tls13"
+2022-11-14 23:58:50.269 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7204/swagger/index.html - -
+2022-11-14 23:58:50.378 -05:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2022-11-14 23:58:50.509 -05:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2022-11-14 23:58:50.713 -05:00 [DBG] Response markup was updated to include browser refresh script injection.
+2022-11-14 23:58:50.718 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7204/swagger/index.html - - - 200 - text/html;charset=utf-8 453.6458ms
+2022-11-14 23:58:50.755 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7204/_vs/browserLink - -
+2022-11-14 23:58:50.755 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7204/_framework/aspnetcore-browser-refresh.js - -
+2022-11-14 23:58:50.764 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7204/_framework/aspnetcore-browser-refresh.js - - - 200 12016 application/javascript;+charset=utf-8 9.0085ms
+2022-11-14 23:58:50.844 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7204/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 88.9735ms
+2022-11-14 23:58:50.906 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7204/swagger/v1/swagger.json - -
+2022-11-14 23:58:51.073 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7204/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 167.7881ms
+2022-11-14 23:58:59.838 -05:00 [DBG] Connection id "0HMM6OOAS20B8" accepted.
+2022-11-14 23:58:59.838 -05:00 [DBG] Connection id "0HMM6OOAS20B8" received FIN.
+2022-11-14 23:58:59.838 -05:00 [DBG] Connection id "0HMM6OOAS20B8" started.
+2022-11-14 23:58:59.839 -05:00 [DBG] Connection id "0HMM6OOAS20B9" accepted.
+2022-11-14 23:58:59.840 -05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-11-14 23:58:59.840 -05:00 [DBG] Connection id "0HMM6OOAS20B9" started.
+2022-11-14 23:58:59.842 -05:00 [DBG] Connection id "0HMM6OOAS20B8" stopped.
+2022-11-14 23:58:59.842 -05:00 [DBG] Connection id "0HMM6OOAS20B8" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-11-14 23:58:59.848 -05:00 [DBG] Connection 0HMM6OOAS20B9 established using the following protocol: "Tls13"
+2022-11-14 23:58:59.859 -05:00 [INF] Request starting HTTP/1.1 DELETE https://localhost:7204/api/products/1 - -
+2022-11-14 23:58:59.861 -05:00 [DBG] DELETE requests are not supported
+2022-11-14 23:58:59.880 -05:00 [DBG] 1 candidate(s) found for the request path '/api/products/1'
+2022-11-14 23:58:59.885 -05:00 [DBG] Endpoint 'DefinitiveChallenge.API.Controllers.ProductController.DeleteProduct (DefinitiveChallenge.API)' with route pattern 'api/products/{id}' is valid for the request path '/api/products/1'
+2022-11-14 23:58:59.886 -05:00 [DBG] Request matched endpoint 'DefinitiveChallenge.API.Controllers.ProductController.DeleteProduct (DefinitiveChallenge.API)'
+2022-11-14 23:58:59.888 -05:00 [INF] Executing endpoint 'DefinitiveChallenge.API.Controllers.ProductController.DeleteProduct (DefinitiveChallenge.API)'
+2022-11-14 23:58:59.903 -05:00 [INF] Route matched with {action = "DeleteProduct", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult DeleteProduct(Int32) on controller DefinitiveChallenge.API.Controllers.ProductController (DefinitiveChallenge.API).
+2022-11-14 23:58:59.905 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2022-11-14 23:58:59.905 -05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2022-11-14 23:58:59.906 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2022-11-14 23:58:59.907 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2022-11-14 23:58:59.908 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2022-11-14 23:58:59.909 -05:00 [DBG] Executing controller factory for controller DefinitiveChallenge.API.Controllers.ProductController (DefinitiveChallenge.API)
+2022-11-14 23:58:59.909 -05:00 [DBG] Executed controller factory for controller DefinitiveChallenge.API.Controllers.ProductController (DefinitiveChallenge.API)
+2022-11-14 23:58:59.920 -05:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' ...
+2022-11-14 23:58:59.921 -05:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' using the name 'id' in request data ...
+2022-11-14 23:58:59.922 -05:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2022-11-14 23:58:59.923 -05:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2022-11-14 23:58:59.923 -05:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.Int32' ...
+2022-11-14 23:58:59.925 -05:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.Int32'.
+2022-11-14 23:58:59.942 -05:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2022-11-14 23:58:59.946 -05:00 [INF] Executed action DefinitiveChallenge.API.Controllers.ProductController.DeleteProduct (DefinitiveChallenge.API) in 34.1714ms
+2022-11-14 23:58:59.947 -05:00 [INF] Executed endpoint 'DefinitiveChallenge.API.Controllers.ProductController.DeleteProduct (DefinitiveChallenge.API)'
+2022-11-14 23:58:59.948 -05:00 [DBG] Connection id "0HMM6OOAS20B9" completed keep alive response.
+2022-11-14 23:58:59.949 -05:00 [INF] Request finished HTTP/1.1 DELETE https://localhost:7204/api/products/1 - - - 204 - - 89.6161ms

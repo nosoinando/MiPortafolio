@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\DefinitiveChallenge.API.props" />
+</Project>

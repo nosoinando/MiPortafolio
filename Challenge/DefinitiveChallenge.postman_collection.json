@@ -1,0 +1,192 @@
+{
+	"info": {
+		"_postman_id": "145a8bda-dbe4-4b5b-b08a-9259b79d18f0",
+		"name": "DefinitiveChallenge",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24172199"
+	},
+	"item": [
+		{
+			"name": "GET All products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:{{puerto}}/api/products",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "{{puerto}}",
+					"path": [
+						"api",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Products by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:{{puerto}}/api/products/2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "{{puerto}}",
+					"path": [
+						"api",
+						"products",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST New product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"description\": \"Escoba\",\r\n  \"type\": \"Bienes\",\r\n  \"value\": 18000,\r\n  \"buyDate\": \"2022-11-15\",\r\n  \"state\": \"ola\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:{{puerto}}/api/products",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "{{puerto}}",
+					"path": [
+						"api",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT Update Product (All fields)",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"description\": \"Actualizado - Apartamento Duplex\",\r\n  \"type\": \"Apartamento\",\r\n  \"value\": 350000000,\r\n  \"buyDate\": \"2022-10-31\",\r\n  \"state\": \"Inactivo\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:{{puerto}}/api/products/2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "{{puerto}}",
+					"path": [
+						"api",
+						"products",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE Product",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:{{puerto}}/api/products/10",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "{{puerto}}",
+					"path": [
+						"api",
+						"products",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Products filtered",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:{{puerto}}/api/products?description=Fabuloso",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "{{puerto}}",
+					"path": [
+						"api",
+						"products"
+					],
+					"query": [
+						{
+							"key": "description",
+							"value": "Fabuloso"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Products searched",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:{{puerto}}/api/products?searchQuery=Camaro",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "{{puerto}}",
+					"path": [
+						"api",
+						"products"
+					],
+					"query": [
+						{
+							"key": "searchQuery",
+							"value": "Camaro"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
