@@ -27,7 +27,7 @@ Permite operaciones CRUD sobre productos, incluyendo validaciones y manejo de er
 
 Aplicación móvil de una **papelería** desarrollada en **Android Studio con Java**.  
 Incluye una interfaz amigable para visualizar productos, agregarlos al carrito y simular un proceso de compra.  
-🔧 Tecnologías: Android Studio, Java
+🔧 Tecnologías: Android Studio, Java, XML
 
 ---
 
